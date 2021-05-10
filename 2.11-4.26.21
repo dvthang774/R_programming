@@ -1,0 +1,67 @@
+mat = matrix(c(1,2,3,4,5,6),3,2) #tạo ma trận
+apply(mat,1,sum)                 #áp dụng một hàm cho các hàng hoặc cột của ma trận 
+
+
+list1 = list(c(1,2,3),3,5,c(2,3,6))#tạo list
+lapply(list1, sum)#áp dụng một chức năng cho từng thành phần của danh sách và lấy lại danh sách.
+sapply(list1, length)# áp dụng một hàm cho từng phần tử của danh sách và lấy lại 1 vecto
+
+tapply(WHO$Population,WHO$Region,mean)#áp dụng một hàm cho các tập con của vectơ và các tập con được xác định bởi một số vectơ khác
+
+diem <- 5
+
+if (diem >= 8) { 
+  print("gioi")#Chỉ quan tâm một trường hợp
+} else if (diem > 6) {#có nhiều trường hợp
+  print("kha")
+} else if (diem > 5) {
+  print("tb")
+} else {
+  print("rot")
+}
+
+
+
+
+answer <- 0
+for (j in 3:5){answer<-j+answer}
+answer
+
+answer <- 10
+for (j in 3:5){answer<-j*answer}
+answer
+
+#1/
+answer <- 0
+for (j in 3: 5) {answer <- j + answer}
+answer 
+answer <- 10
+for (j in 3:5){ answer <- j+answer }
+anser
+answer <- 10
+for (j in 3:5){ answer <- j*answer }
+answer
+#2/
+help(prod)
+prod(3:5,10, na.rm = FALSE)
+#3/su <- 0
+for (i in 1:100){su <- su + i }
+su
+sum(1:100, na.rm = FALSE)
+#4/
+po <- 1
+for (i in 1:50){po <- po * i}
+po
+prod(1:50, na.rm = FALSE)
+#5/
+radius <- (3:20)
+volume <- (4/3*pi*(radius**3))
+conversion <- data.frame(radius=radius, volume=volume)
+print(conversion)
+#6/)
+
+help(sapply)
+tinting <- conversion 
+sapply(tinting, factor)
+sapply(tinting[, 1:2], levels)
+sapply(tinting[, 1:2], ordered)
