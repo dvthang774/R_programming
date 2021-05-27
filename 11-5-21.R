@@ -7,7 +7,7 @@ str(owls)
 #library(dplyr)
 #A. Vẽ biểu đồ tương quan giữa (SiblingNegotiation)với(ArrivalTime) cho cùng 1 tổ (Nest)
 Allnests = unique(owls$Nest)
-setwd("C:/Users/ADMIN/Desktop/GiaiThuat-R/R/data/image")
+setwd("C:\\Users\\Admin\\R_programming")
 for (i in 1:27){
   Nest.i = Allnests[i]
   owls.i = owls[owls$Nest == Nest.i,]
